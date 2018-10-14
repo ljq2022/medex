@@ -1,4 +1,4 @@
-var MyApp = angular.module("MyApp",["ngRoute"]).config(config);
+angular.module("MyApp",["ngRoute"]).config(config);
 
 function config($routeProvider){
   $routeProvider
@@ -17,5 +17,17 @@ function config($routeProvider){
     .when("/hospitalhomepage",{
       templateUrl: "angular-app/hospitalhomepage/hospitalhomepage.html",
       controller: "hospitalhomepagecontroller"
+    })
+    .when("/status",{
+      templateUrl: "angular-app/viewstatus/viewstatus.html",
+      controller: "viewstatusController"
+    })
+    .when("/donate",{
+      templateUrl: "angular-app/donateDevice/donateDevice.html",
+      controller: "donateDeviceController"
+    })
+    .when("/request",{
+      templateUrl: "angular-app/requestDevice/requestDevice.html",
+      controller: "requestDeviceController"
     });
 }

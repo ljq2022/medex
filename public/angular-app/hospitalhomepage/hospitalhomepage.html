@@ -1,12 +1,31 @@
 <head>
 
-    <title>Login</title>
+    <title>Homepage</title>
 
 </head>
 <body id="page-top" style="background-color:#BDEDFF">
-
-  <!-- Navigation -->
-  <div>
-    <h1 class = "title">Welcome back, {{name}}</h1>
+    <div>
+      <h1 class = "title">MedEx</h1>
+      </div>
+      <div ng-controller = "hospitalhomepagecontroller">
+    <h2>Welcome back, {{ name }}</h2>
     </div>
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+             <div class="intro-lead-in"></div>
+            <div class = "divbutton1"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href = '#!/request'>Make a Request</a></div>
+            <div class = "divbutton2"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href='#!/donate'>Donate Technology</a></div>
+        </div>
+      </div>
+      <div class = "container">
+        <div class = "divbutton3"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href = '#!/status'>View Status</a></div>
+      </div>
+    </header>
+  <!-- Navigation -->
   </body>
+  <style>
+  header.masthead {
+    background-image: none;
+  }
+  </style>
